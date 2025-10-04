@@ -313,13 +313,12 @@ footer{
     }
     #sideMenu.active { right: 0; }
 
-    .hero { height: 40vh; }
-    .hero h2 { font-size: 1.5rem; }
-    .hero p { font-size: 1rem; }
+    .hero { height: 30vh; }
+    .hero h2 { font-size: 1rem; }
+    .hero p { font-size: 0.8rem; }
 
     .about-content { flex-wrap: wrap; }
     .about-img img { width: 300px; height: auto; }
-
     section { padding: 10px; }
     .unit-content { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; padding: 0 10px; }
     .unit-item { text-align: center; padding: 0.6rem; font-size: 0.9rem; gap: 1rem; }
