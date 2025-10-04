@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aisyah Rahmawati">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>NCTWENTY</title>
+    
+</head>
+<body class="container">
+    <div class="page-frame">
+        <nav class="navbar">
+            <div class="navbar-body">
+                <div class="nav-title">
+                    <strong >NCT<span>WENTY</span></strong>
+                </div>
+
+                <!-- Nav items -->
+                <ul class="nav-menu">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#about">About NCT</a></li>
+                    <li><a href="#units">Units</a></li>
+                    <li><a href="#diskografi">Diskografi</a></li>
+                    <li><a href="#galery">Gallery</a></li>
+                    <li><a href="#contact" >Contact</a></li>
+                </ul>
+                <button class="menu-btn" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <main>
+                <section class="hero">
+                    <div class="overlay"></div>
+                    <div class="overlay-top"></div>
+                    <div class="hero-content">
+                        <h2>NEO CULTURE TECHNOLOGY</h2>
+                        <p>Limitless Music</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn">View Teaser</a>
+                            <a href="#" class="btn btn-secondary">Explore Units</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="about" class="about">
+                    <h3>About NCT</h3>
+                    <p>NCT (Neo Culture Technology) is a South</p>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p><big><b> NCT </b></big> (Neo Culture Technology) adalah grup K-pop dari SM Entertainment dengan konsep unik: memiliki anggota tak terbatas yang dibagi dalam beberapa sub-unit, sehingga bisa promosi di berbagai negara sekaligus. Setiap sub-unit memiliki gaya musik dan konsep yang berbeda, mulai dari pop, hip-hop, hingga R&B.</p>
+                            <p> Saat ini, NCT memiliki beberapa sub-unit populer, termasuk NCT U yang rotasi anggotanya sesuai konsep lagu, NCT 127 yang berbasis di Seoul, NCT Dream yang awalnya sistem graduation, dan WayV yang fokus promosi di China. Setiap sub-unit membawa warna dan keunikan masing-masing.</p>
+                            <p> Grup ini telah meraih kesuksesan global dengan fanbase bernama NCTzens, menempati chart Billboard, dan melakukan tur internasional. NCT dikenal karena fleksibilitas konsepnya dan kemampuan tiap anggota menunjukkan bakat unik di berbagai bidang musik dan pertunjukan.</p>
+                            <a href="#" class="btn-about">Lear More</a>
+                        </div>
+                        <div class="about-img">
+                            <img src="image/nctpusat.png" alt="NCT" >   
+                        </div>
+                    </div>
+                </section>
+                <section id="units" class="units">
+                    <h3>Units</h3>
+                    <p>NCT has several sub-units, each with its own style and members.</p>
+                    <div class="unit-content">
+                        <a href="./Pages/nct127.html" class="unit-item">
+                            <img src="image/nct127.png" alt="NCT 127" width="50px">
+                            <h3>NCT 127</h3>
+                        </a>
+                        <a href="./Pages/Dream.html" class="unit-item">
+                            <img src="image/dream.png" alt="NCT Dream" width="50px">
+                            <h3>NCT Dream</h3>
+                        </a>
+                        <a href="#" class="unit-item">
+                            <img src="image/wayv.png" alt="Wayv" width="50px">
+                            <h3>Wayv</h3>
+                        </a>
+                        <a href="#" class="unit-item">
+                            <img src="image/wish.png" alt="NCT 127" width="50px">
+                            <h3>NCT Wish</h3>
+                        </a>
+                    </div>
+
+                </section>
+                <section id="diskografi">
+                    <h3>Diskografi NCT</h3>
+
+                    <div class="tab-container">
+                        <button class="tab active" data-filter="all">All</button>
+                        <button class="tab" data-filter="nct127">NCT 127</button>
+                        <button class="tab" data-filter="nctdream">NCT Dream</button>
+                        <button class="tab" data-filter="wayv">Wayv</button>
+                        <button class="tab" data-filter="nctwish">NCT Wish</button>
+                        <button class="tab" data-filter="nct">NCT</button>
+                    </div>
+
+                    <div class="songs"  id="playlist-container">
+                    </div>
+                    <audio id="audio-play" controls style="display:none"></audio>
+                </section>
+                <section id="galery" class="gallery">
+                    <h3>Gallery</h3>
+                    <div class="memory">
+                        <div class="item tall"><img src="image/Group/NCT127.png" alt=""></div>
+                        <div class="item wide"><img src="image/dream/group.jpg" alt=""></div>
+                        <div class="item"><img src="image/Group/NCTWISH.png" alt=""></div>
+                        <div class="item"><img src="image/Group/WAYV.png" alt=""></div>
+                    </div>
+                </section>
+                <section id="contact" class="contact">
+                    <h3>Contact</h3>
+                        <div class="reservation-form">
+                            <form>
+                                <input id="nama" type="text" placeholder="Nama Lengkap" required />
+                                <input id="email" type="email" placeholder="Email" required />
+                                <textarea id="note" placeholder="Catatan (opsional)" rows="4"></textarea>
+                                <!-- Button -->
+                                <button type="submit">Kirim Reservasi</button>
+                            </form>
+                        </div>
+                        <div class="social-icons">
+                            <a href="tel:+82262409800" target="_blank"><i class="fa-solid fa-phone"></i>+82 2 6240 9800</a>
+                            <a href="mailto:smcnc@smtown.com" target="_blank"><i class="fa-solid fa-envelope"></i>smcnc@smtown.com</a>
+                            <a href="https://www.tiktok.com/@official_nct?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i>Nct Official</a>
+                            <a href="https://twitter.com/NCTsmtown" target="_blank"><i class="fab fa-twitter"></i>NCT_OFFICIAL</a>
+                            <a href="https://www.instagram.com/nct/" target="_blank"><i class="fab fa-instagram"></i>NCT</a>
+                            <a href="https://www.youtube.com/channel/UCwgtORdDtUKhpjE1VBv6XfA" target="_blank"><i class="fab fa-youtube"></i>NCT</a>
+                        </div>
+                </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 NCTWENTY. All rights reserved.</p>
+            <p>Designed by Aisyah Rahmawati</p>
+        </footer>
+    </div>
+    <div id="sideMenu">
+        <button class="close-btn" onclick="closeMenu()">
+            <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+        <ul>
+            <li><a href="#" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About NCT</a></li>
+            <li><a href="#units" onclick="closeMenu()">Units</a></li>
+            <li><a href="#diskografi" onclick="closeMenu()">Diskografi</a></li>
+            <li><a href="#galery" onclick="closeMenu()">Gallery</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
