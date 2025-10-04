@@ -3,7 +3,7 @@ let members = [];
 if (window.location.pathname.includes("Dream.html")) {
     members = [
         {name: "Lee Mark",role: "Leader, Main Rapper",birth: "2 Agustus 1999",image: "../image/dream/mark.jpeg"},
-        {name: "Huang Renjun",role: "Main Vocalist, Lead Dancer",birth: "23 Maret 2000",image: "../image/dream/renjun.jpeg"},
+        {name: "Huang Renjun",role: "Main Vocalist, Lead Dancer",birth: "23 Maret 2000",image: "../image/dream/Renjun.jpeg"},
         {name: "Lee Jeno",role: "Lead Rapper, Lead Dancer",birth: "23 April 2000",image: "../image/dream/jeno.jpeg"},
         {name: "Lee Haechan",role: "Main Vocalist, Lead Dancer",birth: "6 Juni 2000",image: "../image/dream/haechan.jpeg"},
         {name: "Na Jaemin",role: "Lead Dancer, Lead Rapper",birth: "13 Agustus 2000",image: "../image/dream/jaemin.jpeg"},
