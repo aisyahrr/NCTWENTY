@@ -287,12 +287,11 @@ footer{
         max-width: 300px;
         margin: 0 auto;
     }
-
-    .nav-menu { display: none !important; }
-    .menu-btn {
+    .nav-menu{display: none !important;}
+    .menu-btn{
         display: block;
         font-size: 30px;
-        background: none;
+        background: none ;
         border: none;
         color: white;
     }
@@ -300,10 +299,10 @@ footer{
         position: fixed;
         top: 0;
         bottom: 0;
-        right: -21rem;
+        right: -21rem; 
         width: 200px;
         height: 100%;
-        background: var(--bg-blue);
+        background: var(--bg-blue); 
         color: white;
         display: flex;
         flex-direction: column;
@@ -311,7 +310,42 @@ footer{
         transition: right 0.5s ease;
         z-index: 9999;
     }
-    #sideMenu.active { right: 0; }
+    #sideMenu.active {right: 0; }
+    /* Close Button */
+    #sideMenu .close-btn{
+        position: absolute;
+        display: block;
+        background: none;
+        border: none;
+        color: #dfdbdb;
+        font-size: 30px;
+        right: 20px;
+        top: 20px;
+        margin-top: 15px ;
+        cursor: pointer;
+    }
+    #sideMenu ul{
+        display: flex;
+        margin-top: 80px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sideMenu li {
+        list-style: none;
+    }
+    #sideMenu a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        display: block;  
+        transition: background 0.3s;
+    }
+
+    #sideMenu a:hover {
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
 
     .hero { height: 30vh; }
     .hero h2 { font-size: 1rem; }
