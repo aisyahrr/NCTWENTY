@@ -247,8 +247,9 @@ section h3{font-family: 'Lato', sans-serif; letter-spacing: 2px;}
 }
 .reservation-form input:focus,
 .reservation-form textarea:focus{ box-shadow: 0 8px 20px rgba(42, 87, 236, 0.5);} 
-.reservation-form button{padding: 10px; background: #040631; border: none;color: white;
+.reservation-form button{padding: 10px; background: var(--btn-primary); border: none;color: white;
     border-radius: 6px; cursor: pointer; transition: background 0.3s; }
+.reservation-form button:hover{background: var(--btn-alt);}
 .sosialmedia {  text-align: left;margin-top: 1rem;}
 .social-icons {margin: 20px 0;display: flex;gap: 10px;}
 .social-icons a {
