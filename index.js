@@ -20,16 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSongEl = null; // simpan elemen lagu yang lagi diputar
 
     const songs = [
-        { title: "Breathing", artist: "NCT DREAM", group: "nctdream", imageUrl: "image/Albums/dream2.jpg",  audioUrl: "audio/Breathing.mp3" },
-        { title: "Graduation", artist: "NCT DREAM", group: "nctdream", imageUrl: "image/Albums/dream1.jpg", audioUrl: "audio/Graduation.mp3" },
-        { title: "Fact Check", artist: "NCT 127", group: "nct127", imageUrl:"image/Albums/nct1277.jpg", audioUrl: "audio/FactCheck.mp3" },
-        { title: "Sticker", artist: "NCT 127", group: "nct127", imageUrl: "image/Albums/nct127.jpg", audioUrl: "audio/Sticker.mp3" },
-        { title: "Beautiful", artist: "NCT", group: "nct", imageUrl: "image/Albums/nct1.jpg", audioUrl: "audio/Beautiful.mp3" },
-        { title: "Surf", artist: "NCT WISH", group: "nctwish", imageUrl: "image/Albums/wish.jpg", audioUrl: "audio/Surf.mp3" },
-        { title: "COLOR", artist: "NCT WISH", group: "nctwish", imageUrl: "image/Albums/wish.jpg", audioUrl: "audio/Color.mp3" },
-        { title: "From Home", artist: "NCT", group: "nct", imageUrl: "image/Albums/nct2.jpg", audioUrl: "audio/FromHome.mp3" },
-        { title: "Love Talk", artist: "WAYV", group: "wayv", imageUrl:"image/Albums/wayv.jpg", audioUrl: "audio/LoveTalk.mp3" },
-        { title: "Turn Back Time", artist: "WAYV", group: "wayv", imageUrl: "image/Albums/wayv2.jpg", audioUrl: "audio/TurnBackTime.mp3" },
+        { title: "Breathing", artist: "NCT DREAM", group: "nctdream", imageUrl: "Asset/image/Albums/dream2.jpg",  audioUrl: "audio/Breathing.mp3" },
+        { title: "Graduation", artist: "NCT DREAM", group: "nctdream", imageUrl: "Asset/image/Albums/dream1.jpg", audioUrl: "audio/Graduation.mp3" },
+        { title: "Fact Check", artist: "NCT 127", group: "nct127", imageUrl:"Asset/image/Albums/nct1277.jpg", audioUrl: "audio/FactCheck.mp3" },
+        { title: "Sticker", artist: "NCT 127", group: "nct127", imageUrl: "Asset/image/Albums/nct127.jpg", audioUrl: "audio/Sticker.mp3" },
+        { title: "Beautiful", artist: "NCT", group: "nct", imageUrl: "Asset/image/Albums/nct1.jpg", audioUrl: "audio/Beautiful.mp3" },
+        { title: "Surf", artist: "NCT WISH", group: "nctwish", imageUrl: "Asset/image/Albums/wish.jpg", audioUrl: "audio/Surf.mp3" },
+        { title: "COLOR", artist: "NCT WISH", group: "nctwish", imageUrl: "Asset/image/Albums/wish.jpg", audioUrl: "audio/Color.mp3" },
+        { title: "From Home", artist: "NCT", group: "nct", imageUrl: "Asset/image/Albums/nct2.jpg", audioUrl: "audio/FromHome.mp3" },
+        { title: "Love Talk", artist: "WAYV", group: "wayv", imageUrl:"Asset/image/Albums/wayv.jpg", audioUrl: "audio/LoveTalk.mp3" },
+        { title: "Turn Back Time", artist: "WAYV", group: "wayv", imageUrl: "Asset/image/Albums/wayv2.jpg", audioUrl: "audio/TurnBackTime.mp3" },
     ];
 
     function renderPlaylist(list){
@@ -102,3 +102,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial render
     renderPlaylist(songs);
 });
+
+// pop up teaser
+function openPopup() { 
+    const popup = document.getElementById("Popup"); 
+    const video = document.getElementById("myVideo");
+
+    popup.style.display = "block";
+    video.play();
+}
+function closePopup() {
+    const popup = document.getElementById("Popup");
+    const video = document.getElementById("myVideo");
+
+    popup.style.display = "none";
+    video.pause();
+    video.currentTime = 0;
+}

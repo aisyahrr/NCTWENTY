@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="image/icon.png">
+    <link rel="icon" type="image/png" href="Asset/image/icon.png">
     <meta name="author" content="Aisyah Rahmawati">
     <meta name="description" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,8 +44,19 @@
                         <h2>NEO CULTURE TECHNOLOGY</h2>
                         <p>Limitless Music</p>
                         <div class="hero-buttons">
-                            <a href="#" class="btn">View Teaser</a>
+                            <button class="btn" onclick="openPopup()">View Teaser</button>
                             <a href="#" class="btn btn-secondary">Explore Units</a>
+                        </div>
+                        <div class="Teaser" id="Popup">
+                            <div class="popup">
+                            <button class="close-btn" onclick="closePopup()">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                            </button>
+                            <video id="myVideo" width="100%" controls >
+                                <source src="Asset/video/NCT.mp4" type="video/mp4">
+                                Browser kamu tidak mendukung video.
+                            </video>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -60,7 +71,7 @@
                             <a href="#" class="btn-about">Lear More</a>
                         </div>
                         <div class="about-img">
-                            <img src="image/nctpusat.png" alt="NCT" >   
+                            <img src="Asset/image/nctpusat.png" alt="NCT" >   
                         </div>
                     </div>
                 </section>
@@ -69,19 +80,19 @@
                     <p>NCT has several sub-units, each with its own style and members.</p>
                     <div class="unit-content">
                         <a href="./Pages/nct127.html" class="unit-item">
-                            <img src="image/nct127.png" alt="NCT 127" width="50px">
+                            <img src="Asset/image/nct127.png" alt="NCT 127" width="50px">
                             <h3>NCT 127</h3>
                         </a>
                         <a href="./Pages/Dream.html" class="unit-item">
-                            <img src="image/dream.png" alt="NCT Dream" width="50px">
+                            <img src="Asset/image/dream.png" alt="NCT Dream" width="50px">
                             <h3>NCT Dream</h3>
                         </a>
                         <a href="#" class="unit-item">
-                            <img src="image/wayv.png" alt="Wayv" width="50px">
+                            <img src="Asset/image/wayv.png" alt="Wayv" width="50px">
                             <h3>Wayv</h3>
                         </a>
                         <a href="#" class="unit-item">
-                            <img src="image/wish.png" alt="NCT 127" width="50px">
+                            <img src="Asset/image/wish.png" alt="NCT 127" width="50px">
                             <h3>NCT Wish</h3>
                         </a>
                     </div>
@@ -106,10 +117,10 @@
                 <section id="galery" class="gallery">
                     <h3>Gallery</h3>
                     <div class="memory">
-                        <div class="item tall"><img src="image/Group/NCT127.png" alt=""></div>
-                        <div class="item wide"><img src="image/dream/group.jpg" alt=""></div>
-                        <div class="item"><img src="image/Group/NCTWISH.png" alt=""></div>
-                        <div class="item"><img src="image/Group/WAYV.png" alt=""></div>
+                        <div class="item tall"><img src="Asset/image/Group/NCT127.png" alt=""></div>
+                        <div class="item wide"><img src="Asset/dream/group.jpg" alt=""></div>
+                        <div class="item"><img src="Asset/image/Group/NCTWISH.png" alt=""></div>
+                        <div class="item"><img src="Asset/image/Group/WAYV.png" alt=""></div>
                     </div>
                 </section>
                 <section id="contact" class="contact">
@@ -151,6 +162,7 @@
             <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
         </ul>
     </div>
+
 
 <script src="index.js"></script>
 

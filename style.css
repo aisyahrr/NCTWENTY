@@ -89,7 +89,7 @@
     .hero {
     position: relative;
     height: 80vh;
-    background: url('/image/hero.jpg') center/cover no-repeat;
+    background: url('/Asset/image/hero.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,6 +131,7 @@
     color: white;
     background-color: #797DEF;
     opacity: 80%;
+    border: none;
     transition: background 0.3s;
 }
 .hero-buttons .btn:hover {background-color: #5f5fff;}
@@ -154,19 +155,19 @@ section h3{font-family: 'Lato', sans-serif; letter-spacing: 2px;}
     max-width: 900px;margin: 2rem auto;}
 .unit-item {
     display: flex;
+    position: relative;
     flex-direction: row;
     align-items: center;
     justify-content: start;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: rgba(42, 87, 236, 0.2);
+    background-color: rgba(42, 87, 236, 0.4);
+    backdrop-filter: blur(10px);
     color: white;
     text-decoration: none;
     border-radius: 10px;
     border: 2px solid transparent;
     transition: transform 0.3s, box-shadow 0.3s, border 0.3s, background 0.3s;
-    position: relative;
-    z-index: 1;
 }
 .unit-item:hover {transform: translateY(-5px);background-color: rgba(42, 87, 236, 0.6);border: 2px solid #2228E3; box-shadow: 0 8px 20px rgba(42, 87, 236, 0.5);cursor: pointer;}
 .unit-item img {margin-bottom: 0.5rem;}
@@ -201,7 +202,7 @@ section h3{font-family: 'Lato', sans-serif; letter-spacing: 2px;}
     gap: 10px;
     align-items: center;
     cursor: pointer;
-    background-color: rgba(255,255,255,0.05);
+    background-color:  rgba(121,125,239,0.18);
     padding: 10px;
     border-radius: 10px;
     transition: background 0.2s;
@@ -270,6 +271,39 @@ footer{
     font-size: 14px;
 }
 
+/* Pop up teaser */
+.Teaser{
+    display: none; 
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+.popup {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background:  linear-gradient(180deg, #2F3AFF 0%, #010325 100%);
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background: #08317e;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+}
 
 @media (max-width: 992px) {
 
@@ -350,7 +384,8 @@ footer{
     .hero { height: 30vh; }
     .hero h2 { font-size: 1rem; }
     .hero p { font-size: 0.8rem; }
-
+    .popup{ width: 350px;}
+    .close-btn {position: absolute;}
     .about-content { flex-wrap: wrap; }
     .about-img img { width: 300px; height: auto; }
     section { padding: 10px; }
