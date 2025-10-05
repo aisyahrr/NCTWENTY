@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: "Fact Check", artist: "NCT 127", group: "nct127", imageUrl:"Asset/image/Albums/nct1277.jpg", audioUrl: "Asset/audio/FactCheck.mp3" },
         { title: "Sticker", artist: "NCT 127", group: "nct127", imageUrl: "Asset/image/Albums/nct127.jpg", audioUrl: "Asset/audio/Sticker.mp3" },
         { title: "Beautiful", artist: "NCT", group: "nct", imageUrl: "Asset/image/Albums/nct1.jpg", audioUrl: "Asset/audio/Beautiful.mp3" },
-        { title: "Surf", artist: "NCT WISH", group: "nctwish", imageUrl: "Asset/image/Albums/wish.jpg", audioUrl: "Asset/audio/Surf.mp3" },
+        { title: "Surf", artist: "NCT WISH", group: "nctwish", imageUrl: "Asset/wish/cover/surf.jpg", audioUrl: "Asset/audio/Surf.mp3" },
         { title: "COLOR", artist: "NCT WISH", group: "nctwish", imageUrl: "Asset/image/Albums/wish.jpg", audioUrl: "Asset/audio/Color.mp3" },
         { title: "From Home", artist: "NCT", group: "nct", imageUrl: "Asset/image/Albums/nct2.jpg", audioUrl: "Asset/audio/FromHome.mp3" },
         { title: "Love Talk", artist: "WAYV", group: "wayv", imageUrl:"Asset/image/Albums/wayv.jpg", audioUrl: "Asset/audio/LoveTalk.mp3" },

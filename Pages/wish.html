@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Asset/image/wish.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>NCT WISH</title>
+</head>
+<body>
+    <div class="page-frame">
+        <nav class="navbar">
+            <div class="navbar-body">
+                <div class="nav-title">
+                    <strong >Neo<span>Verse</span></strong>
+                </div>
+
+                <!-- Nav items -->
+                <ul class="nav-menu">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#members">Members</a></li>
+                    <li><a href="#diskografi">Diskografi</a></li>
+                    <li><a href="#galery">Gallery</a></li>
+                </ul>
+                <button class="menu-btn" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <div class="hero-section">
+                    <div class="content">
+                        <h5>NCT WISH</h5>
+                            <blockquote><i>"WISH for the Future"</i></blockquote>
+                            <p>
+                            NCT WISH adalah unit terbaru dari NCT yang beranggotakan enam member muda penuh semangat. 
+                            Mereka membawa pesan harapan dan impian melalui musik yang cerah dan energik, mencerminkan semangat generasi baru NCT. 
+                            </p>
+                        <button href="#diskografi">View Teaser</button>
+                    </div>
+                    <div class="hero-img">
+                        <img src="/Asset/wish/hero.jpg" alt="NCT DREAM" >
+                    </div>
+                </div>
+            </section>
+            <section id="about" >
+                <h2>About</h2>
+                <div class="unit-about">
+                    <img src="../Asset/wish/group.jpg" alt="Wayv" class="photo">
+                <p>
+                    <b>NCT WISH</b> adalah sub-unit terbaru dari boygroup NCT di bawah SM Entertainment yang debut pada tahun 2024 dengan single <i>WISH</i>. 
+                    Unit ini dibentuk dengan konsep penuh harapan, mimpi, dan semangat muda, menghadirkan energi positif yang mencerminkan generasi baru NCT. 
+                    NCT WISH juga menjadi jembatan antara Korea dan Jepang, dengan anggota yang berasal dari kedua negara, memperluas jangkauan global NCT di Asia.
+                </p>
+                <p>
+                    Seiring dengan debutnya, <b>NCT WISH</b> menampilkan gaya musik yang fresh dan penuh warna, memadukan unsur pop, dance, dan sentuhan youthful khas NCT. 
+                    Mereka dikenal dengan aura cerah, koreografi enerjik, serta kemampuan vokal yang solid meskipun termasuk generasi termuda dalam NCT. 
+                    Setiap penampilan mereka menggambarkan pesan tentang mengejar impian dan menatap masa depan dengan optimisme.
+                </p>
+                <p class="clear">
+                    Dengan lagu-lagu seperti <i>WISH</i> dan <i>Tears Are Falling</i>, <b>NCT WISH</b> berhasil mencuri perhatian publik sejak awal debut. 
+                    Mereka juga memiliki fanbase global bernama <b>WISHER</b> yang mendukung perjalanan mereka untuk menjadi simbol harapan dan inspirasi baru di dunia K-pop.
+                </p>
+                </div>
+                <div class="info-section">
+                    <div class="info-card">
+                        <span class="icon">📅</span>
+                        <p><b>Debut</b> : 21 Februari 2024</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">🏢</span>
+                        <p><b>Label</b> : SM Entertainment</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">💚</span>
+                        <p><b>Fans</b> : Wishzen</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">🎶</span>
+                        <p><b>Lagu Populer</b> : WISH, Tears Are Falling</p>
+                    </div>
+                </div>
+            </section>
+            <section id="members">
+                <h2>Members</h2>
+                <div class="card-profile" id="cardProfile"></div>
+            </section>
+            <section id="diskografi">
+                <h2>Diskografi</h2>
+                <blockquote><i>"Albums"</i></blockquote>
+                <div class="diskrografi-content" id="AlbumCard"></div>
+                <blockquote><i>"Most Viewed MVs"</i></blockquote>
+                <div class="diskrografi-content" id="MvCard"></div>
+            </section>
+        </main>
+    </div>
+    <div id="sideMenu">
+        <button class="close-btn" onclick="closeMenu()">
+            <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+        <ul>
+            <li><a href="#" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#blog" onclick="closeMenu()">Members</a></li>
+            <li><a href="#menu" onclick="closeMenu()">Diskografi</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Gallery</a></li>
+        </ul>
+    </div>
+
+<script src="data.js"></script>
+<script src="../index.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>

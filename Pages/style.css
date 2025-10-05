@@ -256,14 +256,15 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .AlbumCard:hover{background: rgba(19, 33, 230, 0.05);}
-.AlbumCard:hover .spotify-icon{display: block;}
-.AlbumCard .spotify-icon:hover {transform: scale(1.2);cursor: pointer;color: #76eea0;}
+.AlbumCard:hover .spotify-icon{bottom: 10px; opacity: 1;}
+.AlbumCard .spotify-icon:hover {cursor: pointer;color: #76eea0;}
 .CardImge{width: 200px; height: 200px; position: relative;}
 .CardImge img{width: 100%; height: 100%; object-fit: cover; border-radius: 10px;}
 .spotify-icon {
     position: absolute;
-    display: none;
-    bottom: 15px;  
+    bottom: -25px;
+    left: 80%;
+    opacity: 0;
     right: 15px;    
     width: 50px;        
     height: 50px;
@@ -273,7 +274,8 @@ h2 {
     border-radius: 50%;
     color: #1DB954;
     background: #070707;
-    transition: transform 0.3s ease; 
+    transform: translateX(-50%);
+    transition: all 0.4s ease;
 }
 .album-text{padding: 8px 0px;}
 .AlbumCard .album-text h4{

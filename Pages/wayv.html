@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Asset/image/wayv.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>WAYV</title>
+</head>
+<body>
+    <div class="page-frame">
+        <nav class="navbar">
+            <div class="navbar-body">
+                <div class="nav-title">
+                    <strong >Neo<span>Verse</span></strong>
+                </div>
+
+                <!-- Nav items -->
+                <ul class="nav-menu">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#members">Members</a></li>
+                    <li><a href="#diskografi">Diskografi</a></li>
+                    <li><a href="#galery">Gallery</a></li>
+                </ul>
+                <button class="menu-btn" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <div class="hero-section">
+                    <div class="content">
+                        <h5>WAYV</h5>
+                            <blockquote><i>"Vision Beyond Limits"</i></blockquote>
+                            <p>WayV adalah unit keempat dari NCT yang beranggotakan tujuh member karismatik. Mereka dikenal dengan konsep elegan, musikalitas yang kuat, dan kemampuan menampilkan budaya Asia dalam gaya modern yang memikat penggemar di seluruh dunia.</p>
+                        <button href="#diskografi">View Teaser</button>
+                    </div>
+                    <div class="hero-img">
+                        <img src="/Asset/wayv/hero.jpg" alt="NCT DREAM" >
+                    </div>
+                </div>
+            </section>
+            <section id="about" >
+                <h2>About</h2>
+                <div class="unit-about">
+                    <img src="../Asset/wayv/group.jpg" alt="Wayv" class="photo">
+                <p>
+                    <b>WayV</b> adalah sub-unit dari boygroup NCT di bawah SM Entertainment dan Label V, yang debut pada tahun 2019 dengan single <i>Regular</i>. 
+                    Unit ini dibentuk dengan fokus pada pasar Tiongkok, menghadirkan konsep elegan, artistik, dan penuh daya tarik yang memadukan budaya Timur dengan gaya modern khas NCT.
+                </p>
+                <p>
+                    Seiring berjalannya waktu, <b>WayV</b> terus menunjukkan pertumbuhan signifikan melalui eksplorasi musik yang beragam—mulai dari R&amp;B, pop, hingga dance elektronik. 
+                    Mereka dikenal dengan kemampuan vokal yang solid, koreografi yang presisi, serta visual yang kuat. 
+                    Setiap comeback menampilkan sisi baru dari identitas mereka, memadukan unsur kemewahan, kedewasaan, dan energi karismatik yang menjadi ciri khas grup ini.
+                </p>
+                <p class="clear">
+                    Dengan lagu-lagu populer seperti <i>Take Off</i>, <i>Moonwalk</i>, dan <i>Kick Back</i>, <b>WayV</b> berhasil membangun reputasi internasional yang kuat. 
+                    Mereka juga menerima berbagai penghargaan bergengsi dan memiliki fanbase global bernama <b>WayZenNi</b> 
+                    yang senantiasa memberikan dukungan penuh terhadap perjalanan mereka sebagai perwakilan NCT di kancah musik global.
+                </p>
+                </div>
+                <div class="info-section">
+                    <div class="info-card">
+                        <span class="icon">📅</span>
+                        <p><b>Debut</b> : 17 Januari 2019</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">🏢</span>
+                        <p><b>Label</b> : SM Entertainment</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">💚</span>
+                        <p><b>Fans</b> : WayZenNi</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">🎶</span>
+                        <p><b>Lagu Populer</b> : Take Off, Moonwalk, Kick Back</p>
+                    </div>
+                </div>
+            </section>
+            <section id="members">
+                <h2>Members</h2>
+                <div class="card-profile" id="cardProfile"></div>
+            </section>
+            <section id="diskografi">
+                <h2>Diskografi</h2>
+                <blockquote><i>"Albums"</i></blockquote>
+                <div class="diskrografi-content" id="AlbumCard"></div>
+                <blockquote><i>"Most Viewed MVs"</i></blockquote>
+                <div class="diskrografi-content" id="MvCard"></div>
+            </section>
+        </main>
+    </div>
+    <div id="sideMenu">
+        <button class="close-btn" onclick="closeMenu()">
+            <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+        <ul>
+            <li><a href="#" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#blog" onclick="closeMenu()">Members</a></li>
+            <li><a href="#menu" onclick="closeMenu()">Diskografi</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Gallery</a></li>
+        </ul>
+    </div>
+
+<script src="data.js"></script>
+<script src="../index.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
